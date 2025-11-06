@@ -661,7 +661,7 @@ jobs:
           echo "调用 manual 钩子"
           patch -p1 -F 3 < scope_min_manual_hooks_v1.6.patch
           elif [ "${{ github.event.inputs.HOOK }}" = "tracepoint" ]; then
-          cp ../../patches/sukisu_tracepoint_hooks_v1.1.patch ./
+          https://github.com/tonysaari69/Action-Build/raw/SukiSU-Ultra/patches/sukisu_tracepoint_hooks_v1.1.patch 
           echo "调用 tracepoint 钩子"
           patch -p1 -F 3 < sukisu_tracepoint_hooks_v1.1.patch
           fi
